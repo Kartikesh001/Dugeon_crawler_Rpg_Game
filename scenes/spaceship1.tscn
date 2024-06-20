@@ -1,0 +1,106 @@
+[gd_scene load_steps=16 format=3 uid="uid://maeqr1syiolm"]
+
+[ext_resource type="Texture2D" uid="uid://4d4vfwl1sewk" path="res://Kla'ed/Base/PNGs/Kla'ed - Battlecruiser - Base.png" id="1_udluh"]
+[ext_resource type="Texture2D" uid="uid://dfx6p0q6674ik" path="res://Kla'ed/Engine/PNGs/Kla'ed - Battlecruiser - Engine.png" id="2_vmmkc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8huep"]
+atlas = ExtResource("2_vmmkc")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c8v8s"]
+atlas = ExtResource("2_vmmkc")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ui77c"]
+atlas = ExtResource("2_vmmkc")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ii135"]
+atlas = ExtResource("2_vmmkc")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fhrv"]
+atlas = ExtResource("2_vmmkc")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oucvf"]
+atlas = ExtResource("2_vmmkc")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gxg2h"]
+atlas = ExtResource("2_vmmkc")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrtet"]
+atlas = ExtResource("2_vmmkc")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tsobw"]
+atlas = ExtResource("2_vmmkc")
+region = Rect2(1024, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pkp5w"]
+atlas = ExtResource("2_vmmkc")
+region = Rect2(1152, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ri3k5"]
+atlas = ExtResource("2_vmmkc")
+region = Rect2(1280, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwutw"]
+atlas = ExtResource("2_vmmkc")
+region = Rect2(1408, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oucxu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8huep")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c8v8s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ui77c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ii135")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6fhrv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oucvf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gxg2h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrtet")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tsobw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pkp5w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ri3k5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bwutw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Kla\'ed-Battlecruiser-Base" type="Sprite2D"]
+position = Vector2(-1, 0)
+texture = ExtResource("1_udluh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_oucxu")
+autoplay = "default"
+frame = 11
+frame_progress = 0.906094

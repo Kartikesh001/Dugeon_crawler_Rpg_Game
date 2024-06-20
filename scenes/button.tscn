@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://o02xkh6ljtbd"]
+
+[ext_resource type="Script" path="res://scripts/button.gd" id="1_23ayp"]
+
+[node name="Button" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "click on me"
+script = ExtResource("1_23ayp")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

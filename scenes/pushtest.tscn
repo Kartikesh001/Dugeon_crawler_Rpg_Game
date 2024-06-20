@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvw4hsj3ut1cb"]
+
+[ext_resource type="Texture2D" uid="uid://c7ctribee0d0t" path="res://Modern tiles_Free/push.png" id="1_ihgty"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j0e2r"]
+size = Vector2(29, 16)
+
+[node name="RigidBody2D" type="RigidBody2D"]
+mass = 401.41
+gravity_scale = 0.0
+lock_rotation = true
+linear_damp = 50.0
+angular_damp = 50.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 8)
+shape = SubResource("RectangleShape2D_j0e2r")
+
+[node name="InteriorsFree16x16" type="Sprite2D" parent="."]
+texture = ExtResource("1_ihgty")

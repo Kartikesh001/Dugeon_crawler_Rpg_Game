@@ -1,0 +1,89 @@
+[gd_scene load_steps=14 format=3 uid="uid://dk58co6b5rvqv"]
+
+[ext_resource type="Texture2D" uid="uid://f3xybb6m623m" path="res://Kla'ed/Base/PNGs/Kla'ed - Fighter - Base.png" id="1_6v82q"]
+[ext_resource type="Texture2D" uid="uid://bhiipxj04bn4b" path="res://Kla'ed/Engine/PNGs/Kla'ed - Fighter - Engine.png" id="2_hk5do"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xx32b"]
+atlas = ExtResource("2_hk5do")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7aun"]
+atlas = ExtResource("2_hk5do")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pcfn6"]
+atlas = ExtResource("2_hk5do")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a3jm2"]
+atlas = ExtResource("2_hk5do")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67tgp"]
+atlas = ExtResource("2_hk5do")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sotuf"]
+atlas = ExtResource("2_hk5do")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lbwlp"]
+atlas = ExtResource("2_hk5do")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xhk6j"]
+atlas = ExtResource("2_hk5do")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mf43"]
+atlas = ExtResource("2_hk5do")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrelm"]
+atlas = ExtResource("2_hk5do")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_atyr6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xx32b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7aun")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pcfn6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a3jm2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_67tgp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sotuf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lbwlp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xhk6j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mf43")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lrelm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Kla\'ed-Fighter-Base" type="Sprite2D"]
+texture = ExtResource("1_6v82q")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_atyr6")
+autoplay = "default"
